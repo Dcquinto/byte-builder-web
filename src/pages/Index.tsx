@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Cpu, Zap, Shield, ArrowRight } from "lucide-react";
+import Navigation from "@/components/Navigation";
 import heroImage from "@/assets/hero-computer.jpg";
 import desktopPc from "@/assets/desktop-pc.jpg";
 import laptop from "@/assets/laptop.jpg";
@@ -9,6 +10,7 @@ import components from "@/assets/components.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
@@ -32,8 +34,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 container mx-auto px-4">
+      {/* About Section */}
+      <section id="about" className="py-20 container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300">
             <CardContent className="pt-6">
@@ -73,7 +75,7 @@ const Index = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="text-center mb-12">
+        <div id="products" className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Systems</h2>
           <p className="text-xl text-muted-foreground">Engineered for excellence</p>
         </div>
@@ -144,8 +146,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 container mx-auto px-4">
+      {/* Contact Section */}
+      <section id="contact" className="py-20 container mx-auto px-4">
         <Card className="bg-gradient-to-br from-primary/20 via-accent/10 to-primary/20 border-primary/30 overflow-hidden">
           <CardContent className="py-16 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Upgrade?</h2>
