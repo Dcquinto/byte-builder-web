@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Cpu, Zap, Shield, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import ContactForm from "@/components/ContactForm";
 import heroImage from "@/assets/hero-computer.jpg";
 import desktopPc from "@/assets/desktop-pc.jpg";
 import laptop from "@/assets/laptop.jpg";
@@ -148,23 +149,13 @@ const Index = () => {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 container mx-auto px-4">
-        <Card className="bg-gradient-to-br from-primary/20 via-accent/10 to-primary/20 border-primary/30 overflow-hidden">
-          <CardContent className="py-16 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Upgrade?</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join thousands of satisfied customers who've elevated their computing experience with our premium systems
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="group">
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button size="lg" variant="outline">
-                Contact Sales
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+          <p className="text-xl text-muted-foreground">
+            Have questions? We'd love to hear from you.
+          </p>
+        </div>
+        <ContactForm />
       </section>
 
       {/* Footer */}
