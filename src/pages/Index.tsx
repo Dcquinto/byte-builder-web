@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Cpu, Zap, Shield, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
+import ChatWidget from "@/components/ChatWidget";
 import heroImage from "@/assets/hero-computer.jpg";
 import desktopPc from "@/assets/desktop-pc.jpg";
 import laptop from "@/assets/laptop.jpg";
@@ -164,6 +165,9 @@ const Index = () => {
           <p>&copy; 2024 Next-Gen Computing. Engineered for excellence.</p>
         </div>
       </footer>
+
+      {/* Chat Widget */}
+      <ChatWidget />
     </div>
   );
 };
